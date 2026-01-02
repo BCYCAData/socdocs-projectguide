@@ -1,0 +1,219 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/faqs",
+			"headers": {
+				"Location": "/faqs/faq"
+			},
+			"status": 307
+		},
+		{
+			"src": "/project-blog",
+			"headers": {
+				"Location": "/project-blog/hello-world"
+			},
+			"status": 307
+		},
+		{
+			"src": "/project-components",
+			"headers": {
+				"Location": "/project-components/overview/overview"
+			},
+			"status": 307
+		},
+		{
+			"src": "/soc-project",
+			"headers": {
+				"Location": "/soc-project/history/overview"
+			},
+			"status": 307
+		},
+		{
+			"src": "/faqs/faq",
+			"dest": "/faqs/faq/"
+		},
+		{
+			"src": "/faqs/faq/",
+			"status": 308,
+			"headers": {
+				"Location": "/faqs/faq"
+			}
+		},
+		{
+			"src": "/project-blog/hello-world",
+			"dest": "/project-blog/hello-world/"
+		},
+		{
+			"src": "/project-blog/hello-world/",
+			"status": 308,
+			"headers": {
+				"Location": "/project-blog/hello-world"
+			}
+		},
+		{
+			"src": "/project-components/overview/overview",
+			"dest": "/project-components/overview/overview/"
+		},
+		{
+			"src": "/project-components/overview/overview/",
+			"status": 308,
+			"headers": {
+				"Location": "/project-components/overview/overview"
+			}
+		},
+		{
+			"src": "/soc-project/history/overview",
+			"dest": "/soc-project/history/overview/"
+		},
+		{
+			"src": "/soc-project/history/overview/",
+			"status": 308,
+			"headers": {
+				"Location": "/soc-project/history/overview"
+			}
+		},
+		{
+			"src": "/project-components/local-community-hubs/burrell-creek",
+			"dest": "/project-components/local-community-hubs/burrell-creek/"
+		},
+		{
+			"src": "/project-components/local-community-hubs/burrell-creek/",
+			"status": 308,
+			"headers": {
+				"Location": "/project-components/local-community-hubs/burrell-creek"
+			}
+		},
+		{
+			"src": "/project-components/local-community-hubs/mondrook",
+			"dest": "/project-components/local-community-hubs/mondrook/"
+		},
+		{
+			"src": "/project-components/local-community-hubs/mondrook/",
+			"status": 308,
+			"headers": {
+				"Location": "/project-components/local-community-hubs/mondrook"
+			}
+		},
+		{
+			"src": "/project-components/kyngs/overview",
+			"dest": "/project-components/kyngs/overview/"
+		},
+		{
+			"src": "/project-components/kyngs/overview/",
+			"status": 308,
+			"headers": {
+				"Location": "/project-components/kyngs/overview"
+			}
+		},
+		{
+			"src": "/project-components/digital-online-mapping/overview",
+			"dest": "/project-components/digital-online-mapping/overview/"
+		},
+		{
+			"src": "/project-components/digital-online-mapping/overview/",
+			"status": 308,
+			"headers": {
+				"Location": "/project-components/digital-online-mapping/overview"
+			}
+		},
+		{
+			"src": "/project-components/workshops/overview",
+			"dest": "/project-components/workshops/overview/"
+		},
+		{
+			"src": "/project-components/workshops/overview/",
+			"status": 308,
+			"headers": {
+				"Location": "/project-components/workshops/overview"
+			}
+		},
+		{
+			"src": "/soc-project/grants/2021",
+			"dest": "/soc-project/grants/2021/"
+		},
+		{
+			"src": "/soc-project/grants/2021/",
+			"status": 308,
+			"headers": {
+				"Location": "/soc-project/grants/2021"
+			}
+		},
+		{
+			"src": "/soc-project/grants/2022",
+			"dest": "/soc-project/grants/2022/"
+		},
+		{
+			"src": "/soc-project/grants/2022/",
+			"status": 308,
+			"headers": {
+				"Location": "/soc-project/grants/2022"
+			}
+		},
+		{
+			"src": "/soc-project/project-team",
+			"dest": "/soc-project/project-team/"
+		},
+		{
+			"src": "/soc-project/project-team/",
+			"status": 308,
+			"headers": {
+				"Location": "/soc-project/project-team"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {
+		"index.html": {
+			"path": ""
+		},
+		"faqs/faq.html": {
+			"path": "faqs/faq"
+		},
+		"project-blog/hello-world.html": {
+			"path": "project-blog/hello-world"
+		},
+		"project-components/overview/overview.html": {
+			"path": "project-components/overview/overview"
+		},
+		"soc-project/history/overview.html": {
+			"path": "soc-project/history/overview"
+		},
+		"project-components/local-community-hubs/burrell-creek.html": {
+			"path": "project-components/local-community-hubs/burrell-creek"
+		},
+		"project-components/local-community-hubs/mondrook.html": {
+			"path": "project-components/local-community-hubs/mondrook"
+		},
+		"project-components/kyngs/overview.html": {
+			"path": "project-components/kyngs/overview"
+		},
+		"project-components/digital-online-mapping/overview.html": {
+			"path": "project-components/digital-online-mapping/overview"
+		},
+		"project-components/workshops/overview.html": {
+			"path": "project-components/workshops/overview"
+		},
+		"soc-project/grants/2021.html": {
+			"path": "soc-project/grants/2021"
+		},
+		"soc-project/grants/2022.html": {
+			"path": "soc-project/grants/2022"
+		},
+		"soc-project/project-team.html": {
+			"path": "soc-project/project-team"
+		}
+	}
+}

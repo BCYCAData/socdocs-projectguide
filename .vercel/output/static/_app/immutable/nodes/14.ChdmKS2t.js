@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/DfgfjzFV.js";const r=!0,o=async()=>{e(307,"/soc-project/history/overview")},c=Object.freeze(Object.defineProperty({__proto__:null,load:o,prerender:r},Symbol.toStringTag,{value:"Module"}));export{c as universal};

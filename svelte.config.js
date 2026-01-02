@@ -5,7 +5,9 @@ const config = {
   extensions: ['.svelte', '.md'],
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      runtime: 'nodejs20.x'
+    }),
 
     prerender: {
       entries: ['*'],
